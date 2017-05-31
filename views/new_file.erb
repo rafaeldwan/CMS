@@ -1,0 +1,14 @@
+<form method="post" action="/new">
+  <dl>
+    <dt>
+      <label for="file_name">Enter the name for your new file:</label>
+    </dt>
+    <dd>
+      <input name="file_name" type = "text" value= "<%= params[:file_name] %>">
+    </dd>
+  </dl>
+  <fieldset class="actions">
+    <input type="submit" value="Create">
+    <a href="/">Cancel</a>
+  </fieldset>
+</form>
