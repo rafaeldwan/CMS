@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+  <link rel="stylesheet" href="/stylesheets/sakura.css">
+  <link rel="stylesheet" href="/stylesheets/normalize.css">
   <link rel="stylesheet" href="/stylesheets/application.css">
   <title>I made a cms!</title>
 </head>
 <body>
+<h1><%== yield_content :page_label %></h1>
   <% if session[:error] %>
     <div class="flash error">
       <p><%= session.delete(:error) %></p>

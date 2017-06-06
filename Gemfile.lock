@@ -3,9 +3,10 @@ GEM
   specs:
     ansi (1.5.0)
     backports (3.8.0)
+    bcrypt (3.1.11-x86-mingw32)
     builder (3.2.3)
     erubis (2.7.0)
-    minitest (5.8.5)
+    minitest (5.10.2)
     minitest-reporters (1.1.14)
       ansi
       builder
@@ -36,6 +37,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bcrypt
   erubis
   minitest
   minitest-reporters
