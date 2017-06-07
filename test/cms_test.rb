@@ -61,7 +61,7 @@ class AppTest < Minitest::Test
   end
 
   def test_markdown_read
-    create_document 'about.md', '<h1>But it&#39;s just not'
+    create_document 'about.md', '#But it&#39;s just not'
 
     get '/about.md'
     assert_equal 200, last_response.status
